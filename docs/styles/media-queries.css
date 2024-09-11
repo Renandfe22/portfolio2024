@@ -38,12 +38,16 @@
         width: 6rem;
         height: 6rem;
     }
+
+    #contactPage {
+        padding: 1rem;
+    }
 }
 
 /* Geral para telas menores que 992px */
 @media (max-width: 991px) {
     #projects {
-        padding: 2rem 0;
+        padding: 2rem 1rem;
     }
 
     .slider {
@@ -87,6 +91,30 @@
     .gallery-img {
         width: 5rem;
         height: 5rem;
+    }
+
+    #contactPage {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 1rem;
+    }
+
+    #contactTitle {
+        grid-column: 1 / -1;
+    }
+
+    #DescriptContact {
+        grid-column: 1 / -1;
+    }
+
+    #socialIcons {
+        grid-column: 1 / -1;
+    }
+
+    #talkToMe {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        padding: 1rem;
     }
 }
 
@@ -156,8 +184,12 @@
     }
 
     #talkToMe {
-        grid-column: 1 / 7;
-        grid-row: 2 / 6;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        padding: 1rem;
+    }
+
+    #contactPage {
         padding: 1rem;
     }
 }
@@ -211,8 +243,12 @@
     }
 
     #talkToMe {
-        grid-column: 1 / 7;
-        grid-row: 2 / 6;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        padding: 1rem;
+    }
+
+    #contactPage {
         padding: 1rem;
     }
 }
