@@ -7,7 +7,7 @@
     }
 
     #contactTitle {
-        font-size: 2.5rem; /* Reduzido para se ajustar melhor em telas pequenas */
+        font-size: 2rem; /* Reduzido para se ajustar melhor em telas pequenas */
         padding-left: 0;
         text-align: center;
     }
@@ -15,6 +15,7 @@
     #DescriptContact {
         width: 100%;
         padding-left: 0;
+        font-size: 1rem; /* Reduzido para melhor ajuste */
     }
 
     #socialIcons, #talkToMe {
@@ -23,40 +24,40 @@
     }
 
     .talk {
-        font-size: 1.5rem; /* Reduzido para se ajustar melhor em telas pequenas */
+        font-size: 1.2rem; /* Reduzido para se ajustar melhor em telas pequenas */
         text-align: center;
     }
 
     .nameTalk {
-        font-size: 0.9rem; /* Reduzido para se ajustar melhor em telas pequenas */
+        font-size: 0.8rem; /* Reduzido para se ajustar melhor em telas pequenas */
         text-align: center;
     }
 
     .localMensage, textarea {
         width: calc(100% - 2rem);
-        height: 2.5rem;
+        height: 2rem; /* Reduzido para melhor ajuste */
         margin: 0 auto 1rem;
+        font-size: 0.9rem; /* Reduzido para melhor ajuste */
     }
 
     button {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Reduzido para melhor ajuste */
         padding: 0.5rem 1rem;
         margin: 1rem auto;
         display: block;
     }
 
     #titleProjects, #titleSkills {
-        font-size: 4rem; /* Reduzido para melhorar a responsividade */
-        margin-bottom: 2rem;
+        font-size: 3rem; /* Reduzido para melhorar a responsividade */
+        margin-bottom: 1.5rem;
     }
 
     .slider {
-        max-width: 100%; /* Ajusta para caber na tela */
+        max-width: 100%;
         height: auto; /* Ajusta a altura conforme o conteúdo */
     }
 
     .skill-item {
-        flex: 1;
         padding: 0.5rem; /* Reduzido para economizar espaço */
     }
 
@@ -66,15 +67,15 @@
     }
 
     #skills {
-        padding: 2rem 0; /* Reduzido para ajustar em telas menores */
+        padding: 2rem 0; /* Ajustado para melhor responsividade */
     }
 
     #titleSkills {
-        font-size: 4rem; /* Reduzido para melhorar a responsividade */
+        font-size: 3rem; /* Reduzido para melhorar a responsividade em telas menores */
     }
 
     #subtitleSkills {
-        font-size: 1.8rem; /* Reduzido para melhorar a responsividade */
+        font-size: 1.5rem; /* Reduzido para melhorar a responsividade em telas menores */
     }
 }
 
@@ -88,13 +89,14 @@
     }
 
     #contactTitle {
-        font-size: 3rem;
+        font-size: 2.5rem; /* Ajustado para se adequar melhor em tablets */
         padding-left: 0;
     }
 
     #DescriptContact {
         width: 100%;
         padding-left: 0;
+        font-size: 1.2rem; /* Ajustado para se adequar melhor em tablets */
     }
 
     #socialIcons, #talkToMe {
@@ -104,32 +106,33 @@
     }
 
     .talk {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Ajustado para se adequar melhor em tablets */
     }
 
     .nameTalk {
-        font-size: 1.1rem;
+        font-size: 1rem; /* Ajustado para se adequar melhor em tablets */
     }
 
     .localMensage, textarea {
         width: calc(100% - 2rem);
         height: 2.5rem;
         margin: 0 auto 1rem;
+        font-size: 1rem; /* Ajustado para se adequar melhor em tablets */
     }
 
     button {
-        font-size: 1.2rem;
-        padding: 0.7rem 1.3rem;
+        font-size: 1rem; /* Ajustado para se adequar melhor em tablets */
+        padding: 0.6rem 1.2rem;
         margin: 1rem auto;
         display: block;
     }
 
     #titleProjects, #titleSkills {
-        font-size: 5rem; /* Ajustado para melhorar a responsividade em tablets */
+        font-size: 4rem; /* Ajustado para melhorar a responsividade em tablets */
     }
 
     .slider {
-        max-width: 100%; /* Ajusta para caber na tela */
+        max-width: 100%;
         height: auto; /* Ajusta a altura conforme o conteúdo */
     }
 
@@ -143,14 +146,14 @@
     }
 
     #skills {
-        padding: 3rem 0; /* Ajusta o padding para melhor responsividade */
+        padding: 3rem 0; /* Ajustado para melhor responsividade */
     }
 
     #titleSkills {
-        font-size: 5rem; /* Ajustado para melhorar a responsividade em tablets */
+        font-size: 4rem; /* Ajustado para melhorar a responsividade em tablets */
     }
 
     #subtitleSkills {
-        font-size: 2rem; /* Ajustado para melhorar a responsividade em tablets */
+        font-size: 1.8rem; /* Ajustado para melhorar a responsividade em tablets */
     }
 }
