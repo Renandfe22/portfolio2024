@@ -36,3 +36,26 @@ document.addEventListener('DOMContentLoaded', () => {
         mainContent.classList.add('visible');
     });
 });
+
+const handleSubmit = (event) => {
+    event.preventDefault();
+    
+    const name = document.querySelector('#name').value
+    const email = document.querySelector('#email').value
+    const message = document.querySelector('#message').value
+
+    fetch('https://api.sheetmonkey.io/form/mJ2MWJY7DgvFGQCJgHbPXQ', {
+        
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({name, email, message}), //converte o objeto em string
+    })
+}
+
+// Itera sobre cada formulário e adiciona o event listener
+document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', handleSubmit)
+})
