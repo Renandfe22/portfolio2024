@@ -1,189 +1,218 @@
-/* Estilos para telas menores */
-@media (max-width: 768px) {
-    #skills {
-        padding: 2rem 1rem; /* Ajustado para melhor responsividade */
+/* Geral para telas menores que 1200px */
+@media (max-width: 1199px) {
+    #titleProjects {
+        font-size: clamp(2.5rem, 5vw, 5.5rem);
+    }
+
+    .slideTitle {
+        font-size: clamp(3rem, 5vw, 4rem);
+    }
+
+    .slideDescription {
+        font-size: clamp(2rem, 4vw, 2.5rem);
     }
 
     #titleSkills {
-        font-size: 2.5rem; /* Ajustado para se adequar melhor em telas menores */
+        font-size: clamp(2.5rem, 5vw, 5rem);
     }
 
     #subtitleSkills {
-        font-size: 1.5rem; /* Ajustado para melhor responsividade */
+        font-size: clamp(1.5rem, 3vw, 2rem);
     }
 
-    .skill-progress {
-        flex-direction: column; /* Coloca as habilidades em coluna para telas menores */
-        max-width: 100%; /* Permite que a largura se ajuste ao tamanho da tela */
+    #contactTitle {
+        font-size: clamp(1.5rem, 5vw, 3rem);
+    }
+
+    #DescriptContact {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+        width: 100%;
+        padding-left: 1rem;
     }
 
     .skill-item {
-        flex: 1 1 auto; /* Ajusta o item de habilidade para preencher a coluna */
-        margin-bottom: 1rem; /* Adiciona espaçamento entre os itens */
-        padding: 1rem; /* Ajustado para economizar espaço */
+        flex: 1 1 30rem;
     }
 
-    .skill-item img {
-        height: auto; /* Ajusta a altura da imagem para manter a proporção */
-    }
-
-    .subSkill {
-        font-size: 2rem; /* Ajustado para melhor legibilidade em telas menores */
-        max-width: 90%; /* Ajusta a largura da descrição */
+    .gallery-img {
+        width: 6rem;
+        height: 6rem;
     }
 }
 
-/* Estilos para tablets e telas médias */
-@media (min-width: 769px) and (max-width: 1024px) {
-    #skills {
-        padding: 3rem 2rem; /* Ajustado para melhor responsividade */
+/* Geral para telas menores que 992px */
+@media (max-width: 991px) {
+    #projects {
+        padding: 2rem 0;
+    }
+
+    .slider {
+        height: 25rem;
+    }
+
+    #titleProjects {
+        font-size: clamp(2rem, 5vw, 4rem);
+    }
+
+    .slideTitle {
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+    }
+
+    .slideDescription {
+        font-size: clamp(1.8rem, 4vw, 2rem);
     }
 
     #titleSkills {
-        font-size: 3rem; /* Ajustado para melhor responsividade em tablets */
+        font-size: clamp(2rem, 5vw, 4rem);
     }
 
     #subtitleSkills {
-        font-size: 1.8rem; /* Ajustado para tablets */
+        font-size: clamp(1.4rem, 3vw, 1.8rem);
     }
 
-    .skill-progress {
-        flex-direction: row; /* Mantém as habilidades em linha para tablets */
+    #contactTitle {
+        font-size: clamp(1.2rem, 5vw, 2.5rem);
+    }
+
+    #DescriptContact {
+        font-size: clamp(0.8rem, 4vw, 1rem);
+        width: 100%;
+        padding-left: 1rem;
     }
 
     .skill-item {
-        flex: 1 1 45%; /* Ajustado para preencher a linha */
-        margin: 1rem; /* Adiciona espaçamento entre os itens */
-        padding: 1.25rem; /* Ajustado para tablets */
+        flex: 1 1 40rem;
     }
 
-    .skill-item img {
-        height: auto; /* Ajusta a altura da imagem para manter a proporção */
-    }
-
-    .subSkill {
-        font-size: 2.4rem; /* Ajustado para tablets */
-        max-width: 80%; /* Ajusta a largura da descrição */
+    .gallery-img {
+        width: 5rem;
+        height: 5rem;
     }
 }
 
-/* Estilos específicos para dispositivos como iPhone 11 */
-@media (max-width: 828px) {
+/* Geral para telas menores que 768px */
+@media (max-width: 767px) {
+    #titleDiv {
+        grid-template-columns: 1fr;
+    }
+
+    #mainTitle {
+        font-size: clamp(2rem, 6vw, 3.5rem);
+    }
+
+    #secondaryTitle {
+        font-size: clamp(1rem, 5vw, 1.8rem);
+    }
+
+    #mainButton {
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
+        padding: 0.8rem 1rem;
+    }
+
+    #mainDescription {
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
+    }
+
+    .slider {
+        height: 20rem;
+    }
+
+    .slideTitle {
+        font-size: clamp(2rem, 4vw, 2.5rem);
+    }
+
+    .slideDescription {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
     #titleSkills {
-        font-size: 2rem; /* Ajustado para melhorar a visualização */
+        font-size: clamp(1.8rem, 4vw, 3.5rem);
     }
 
     #subtitleSkills {
-        font-size: 1.2rem; /* Ajustado para melhorar a visualização */
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
     }
 
-    .skill-progress {
-        flex-direction: column; /* Coloca as habilidades em coluna para telas menores */
-        max-width: 100%; /* Permite que a largura se ajuste ao tamanho da tela */
+    #contactTitle {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+
+    #DescriptContact {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        padding-left: 1rem;
     }
 
     .skill-item {
-        flex: 1 1 auto; /* Ajusta o item de habilidade para preencher a coluna */
-        margin-bottom: 1rem; /* Adiciona espaçamento entre os itens */
-        padding: 1rem; /* Ajustado para economizar espaço */
+        flex: 1 1 100%;
     }
 
-    .skill-item img {
-        height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    .gallery-img {
+        width: 4rem;
+        height: 4rem;
     }
 
-    .subSkill {
-        font-size: 1.8rem; /* Ajustado para melhor legibilidade em telas menores */
-        max-width: 90%; /* Ajusta a largura da descrição */
+    .eventCard {
+        width: 18rem;
     }
-}
 
-/* Estilos para o contato e containers */
-@media (max-width: 768px) {
-    #contactPage {
-        display: flex;
-        flex-direction: column;
+    #talkToMe {
+        grid-column: 1 / 7;
+        grid-row: 2 / 6;
         padding: 1rem;
     }
-
-    #contactTitle {
-        font-size: 1.8rem; /* Reduzido para se ajustar melhor em telas pequenas */
-        text-align: center;
-    }
-
-    #DescriptContact {
-        width: calc(100% - 2rem); /* Ajusta a largura para melhor adaptação */
-        font-size: 1rem;
-    }
-
-    #socialIcons, #talkToMe {
-        margin-top: 1rem;
-        text-align: center;
-    }
-
-    .talk {
-        font-size: 1.2rem; /* Reduzido para se ajustar melhor em telas pequenas */
-    }
-
-    .nameTalk {
-        font-size: 0.9rem; /* Reduzido para se ajustar melhor em telas pequenas */
-    }
-
-    .localMensage, textarea {
-        width: calc(100% - 2rem);
-        height: 2.5rem;
-        margin: 0 auto 1rem;
-        font-size: 0.9rem;
-    }
-
-    button {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-        margin: 1rem auto;
-    }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    #contactPage {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        padding: 2rem;
+/* Geral para telas menores que 576px */
+@media (max-width: 575px) {
+    #mainTitle {
+        font-size: clamp(1.5rem, 5vw, 3rem);
+    }
+
+    #secondaryTitle {
+        font-size: clamp(0.8rem, 4vw, 1.5rem);
+    }
+
+    #mainButton {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+        padding: 0.6rem 0.8rem;
+    }
+
+    #mainDescription {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    .slideTitle {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .slideDescription {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    #titleSkills {
+        font-size: clamp(1.5rem, 3vw, 3rem);
+    }
+
+    #subtitleSkills {
+        font-size: clamp(1rem, 2vw, 1.2rem);
     }
 
     #contactTitle {
-        font-size: 2rem; /* Ajustado para melhor adaptação em tablets */
+        font-size: clamp(1rem, 3vw, 1.5rem);
     }
 
     #DescriptContact {
-        width: calc(100% - 2rem); /* Ajusta a largura para melhor adaptação */
-        font-size: 1.2rem;
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        padding-left: 1rem;
     }
 
-    #socialIcons, #talkToMe {
-        grid-column: 1 / 2;
-        margin-top: 2rem;
-        text-align: center;
+    .eventCard {
+        width: 100%;
     }
 
-    .talk {
-        font-size: 1.5rem; /* Ajustado para tablets */
-    }
-
-    .nameTalk {
-        font-size: 1rem; /* Ajustado para tablets */
-    }
-
-    .localMensage, textarea {
-        width: calc(100% - 2rem);
-        height: 2.5rem;
-        margin: 0 auto 1rem;
-        font-size: 1rem;
-    }
-
-    button {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-        margin: 1rem auto;
+    #talkToMe {
+        grid-column: 1 / 7;
+        grid-row: 2 / 6;
+        padding: 1rem;
     }
 }
