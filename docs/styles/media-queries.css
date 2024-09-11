@@ -1,6 +1,5 @@
-/* Estilos para telas menores (máximo de 768px de largura) */
+/* Estilos para telas menores */
 @media (max-width: 768px) {
-    /* Ajustes para a página de contato */
     #contactPage {
         display: flex;
         flex-direction: column;
@@ -45,11 +44,7 @@
         margin: 1rem auto;
     }
 
-    #titleProjects {
-        font-size: 2.5rem; /* Ajustado para se adequar melhor em telas menores */
-    }
-
-    #titleSkills {
+    #titleProjects, #titleSkills {
         font-size: 2.5rem; /* Ajustado para se adequar melhor em telas menores */
     }
 
@@ -71,14 +66,17 @@
         padding: 2rem 0; /* Ajustado para melhor responsividade */
     }
 
+    #titleSkills {
+        font-size: 2.5rem; /* Reduzido para se ajustar melhor em telas menores */
+    }
+
     #subtitleSkills {
         font-size: 1.5rem; /* Ajustado para melhor responsividade */
     }
 }
 
-/* Estilos para tablets e telas médias (769px a 1024px) */
+/* Estilos para tablets e telas médias */
 @media (min-width: 769px) and (max-width: 1024px) {
-    /* Ajustes para a página de contato */
     #contactPage {
         display: grid;
         grid-template-columns: 1fr;
@@ -124,12 +122,8 @@
         margin: 1rem auto;
     }
 
-    #titleProjects {
+    #titleProjects, #titleSkills {
         font-size: 3rem; /* Ajustado para melhor responsividade em tablets */
-    }
-
-    #titleSkills {
-        font-size: 3rem; /* Ajustado para tablets */
     }
 
     .slider {
@@ -150,18 +144,17 @@
         padding: 3rem 0; /* Ajustado para melhor responsividade */
     }
 
+    #titleSkills {
+        font-size: 3rem; /* Ajustado para tablets */
+    }
+
     #subtitleSkills {
         font-size: 1.8rem; /* Ajustado para tablets */
     }
 }
 
-/* Estilos específicos para dispositivos como iPhone 11 (máximo de 828px de largura) */
+/* Estilos específicos para dispositivos como iPhone 11 */
 @media (max-width: 828px) {
-    #titleProjects {
-        font-size: 3rem; /* Ajustado para telas menores */
-        margin-bottom: 1.5rem; /* Menor espaçamento abaixo do título */
-    }
-
     #titleSkills {
         font-size: 2rem; /* Ajustado para melhorar a visualização */
     }
@@ -171,23 +164,11 @@
     }
 
     .skill-item {
-        flex: 1 1 90%; /* Faz com que os cards ocupem quase toda a largura disponível */
+        flex: 1 1 45%; /* Ajustado para melhor ajuste em tela pequena */
     }
 
     .gallery-img {
         width: 6rem; /* Reduzido para melhor ajuste */
         height: 6rem; /* Reduzido para melhor ajuste */
-    }
-
-    /* Título de Hackathons e Eventos */
-    #titleEvents {
-        font-size: 2rem; /* Ajustado para telas menores */
-        margin-bottom: 1rem; /* Menor espaçamento abaixo do título */
-    }
-
-    /* Descrição dos Hackathons e Eventos */
-    .eventCard {
-        flex: 1 1 100%; /* Ajusta o tamanho dos cards para ocupar toda a largura disponível */
-        margin: 0.5rem 0; /* Ajusta a margem para telas menores */
     }
 }
