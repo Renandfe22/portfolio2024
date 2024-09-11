@@ -1,112 +1,193 @@
-/* Estilos para telas menores */
+/* Estilos para telas menores (máximo de 768px de largura) */
 @media (max-width: 768px) {
-    /* Ajustes na seção de habilidades */
-    .skill-progress {
-        flex-direction: column; /* Coloca os cards em coluna em telas pequenas */
-        gap: 1rem;
-        max-width: 100%; /* Ajusta a largura para ocupar a tela inteira */
-        margin: 0 auto;
+    /* Ajustes para a página de contato */
+    #contactPage {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
     }
 
-    .skill-item {
-        flex: 1 1 100%; /* Faz com que cada card ocupe a largura total disponível */
-        padding: 1rem; /* Reduz o padding para economizar espaço */
+    #contactTitle {
+        font-size: 1.8rem; /* Reduzido para se ajustar melhor em telas pequenas */
+        padding-left: 0;
+        text-align: center;
     }
 
-    .skill-item img {
-        width: 80%; /* Ajusta o tamanho da imagem para se adequar melhor */
+    #DescriptContact {
+        width: calc(100% - 2rem); /* Ajusta a largura para melhor adaptação */
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    #socialIcons, #talkToMe {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .talk {
+        font-size: 1.2rem; /* Reduzido para se ajustar melhor em telas pequenas */
+    }
+
+    .nameTalk {
+        font-size: 0.9rem; /* Reduzido para se ajustar melhor em telas pequenas */
+    }
+
+    .localMensage, textarea {
+        width: calc(100% - 2rem);
+        height: 2.5rem;
+        margin: 0 auto 1rem;
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 1rem auto;
+    }
+
+    #titleProjects {
+        font-size: 2.5rem; /* Ajustado para se adequar melhor em telas menores */
+    }
+
+    #titleSkills {
+        font-size: 2.5rem; /* Ajustado para se adequar melhor em telas menores */
+    }
+
+    .slider {
+        max-width: 100%;
         height: auto;
     }
 
-    /* Ajustes na seção de Hackathons e Eventos */
-    #titleEvents {
-        font-size: 2.5rem; /* Reduzido para se ajustar melhor em telas pequenas */
+    .skill-item {
+        padding: 0.5rem; /* Ajustado para economizar espaço */
     }
 
-    #EventDescriptions {
-        flex-direction: column; /* Coloca os cards em coluna em telas pequenas */
-        gap: 1rem;
-        width: 100%; /* Ajusta a largura para ocupar a tela inteira */
+    .skill-item img {
+        width: 100%;
+        height: auto;
     }
 
-    .eventCard {
-        width: calc(100% - 2rem); /* Ajusta a largura para se ajustar em telas pequenas */
-        margin: 0 auto; /* Centraliza os cards */
-        padding: 1rem; /* Reduz o padding para economizar espaço */
+    #skills {
+        padding: 2rem 0; /* Ajustado para melhor responsividade */
+    }
+
+    #subtitleSkills {
+        font-size: 1.5rem; /* Ajustado para melhor responsividade */
+    }
+}
+
+/* Estilos para tablets e telas médias (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Ajustes para a página de contato */
+    #contactPage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        padding: 2rem;
+    }
+
+    #contactTitle {
+        font-size: 2rem; /* Ajustado para melhor adaptação em tablets */
+        padding-left: 0;
+    }
+
+    #DescriptContact {
+        width: calc(100% - 2rem); /* Ajusta a largura para melhor adaptação */
+        padding-left: 0;
+        font-size: 1.2rem;
+    }
+
+    #socialIcons, #talkToMe {
+        grid-column: 1 / 2;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .talk {
+        font-size: 1.5rem; /* Ajustado para tablets */
+    }
+
+    .nameTalk {
+        font-size: 1rem; /* Ajustado para tablets */
+    }
+
+    .localMensage, textarea {
+        width: calc(100% - 2rem);
+        height: 2.5rem;
+        margin: 0 auto 1rem;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        margin: 1rem auto;
+    }
+
+    #titleProjects {
+        font-size: 3rem; /* Ajustado para melhor responsividade em tablets */
+    }
+
+    #titleSkills {
+        font-size: 3rem; /* Ajustado para tablets */
+    }
+
+    .slider {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .skill-item {
+        padding: 0.75rem; /* Ajustado para tablets */
+    }
+
+    .skill-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    #skills {
+        padding: 3rem 0; /* Ajustado para melhor responsividade */
+    }
+
+    #subtitleSkills {
+        font-size: 1.8rem; /* Ajustado para tablets */
+    }
+}
+
+/* Estilos específicos para dispositivos como iPhone 11 (máximo de 828px de largura) */
+@media (max-width: 828px) {
+    #titleProjects {
+        font-size: 3rem; /* Ajustado para telas menores */
+        margin-bottom: 1.5rem; /* Menor espaçamento abaixo do título */
+    }
+
+    #titleSkills {
+        font-size: 2rem; /* Ajustado para melhorar a visualização */
+    }
+
+    #subtitleSkills {
+        font-size: 1.2rem; /* Ajustado para melhorar a visualização */
+    }
+
+    .skill-item {
+        flex: 1 1 90%; /* Faz com que os cards ocupem quase toda a largura disponível */
     }
 
     .gallery-img {
         width: 6rem; /* Reduzido para melhor ajuste */
         height: 6rem; /* Reduzido para melhor ajuste */
     }
-}
 
-/* Estilos para tablets e telas médias */
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Ajustes na seção de habilidades */
-    .skill-progress {
-        flex-direction: row; /* Mantenha os cards em linha em tablets e telas médias */
-    }
-
-    .skill-item {
-        flex: 1 1 30%; /* Ajusta a largura dos cards para se adequar melhor em tablets */
-        padding: 1rem;
-    }
-
-    .skill-item img {
-        width: 90%; /* Ajusta o tamanho da imagem */
-    }
-
-    /* Ajustes na seção de Hackathons e Eventos */
+    /* Título de Hackathons e Eventos */
     #titleEvents {
-        font-size: 3rem; /* Ajustado para melhor adaptação em tablets */
+        font-size: 2rem; /* Ajustado para telas menores */
+        margin-bottom: 1rem; /* Menor espaçamento abaixo do título */
     }
 
-    #EventDescriptions {
-        flex-direction: row; /* Mantém os cards em linha em tablets e telas médias */
-        flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte se não houver espaço suficiente */
-    }
-
+    /* Descrição dos Hackathons e Eventos */
     .eventCard {
-        width: calc(50% - 1rem); /* Ajusta a largura para melhor visualização em tablets */
-    }
-
-    .gallery-img {
-        width: 7rem; /* Ajusta o tamanho das imagens */
-        height: 7rem;
-    }
-}
-
-/* Estilos específicos para dispositivos como iPhone 11 */
-@media (max-width: 828px) {
-    /* Ajustes na seção de habilidades */
-    .skill-progress {
-        flex-direction: column; /* Coloca os cards em coluna */
-        gap: 0.5rem; /* Reduz o espaço entre os cards */
-    }
-
-    .skill-item {
-        flex: 1 1 100%; /* Faz com que cada card ocupe a largura total disponível */
-        padding: 0.5rem; /* Reduz o padding para economizar espaço */
-    }
-
-    .skill-item img {
-        width: 100%; /* Ajusta a imagem para ocupar a largura do card */
-        height: auto;
-    }
-
-    /* Ajustes na seção de Hackathons e Eventos */
-    #titleEvents {
-        font-size: 2rem; /* Reduzido para melhorar a visualização em telas pequenas */
-    }
-
-    #EventDescriptions {
-        flex-direction: column; /* Coloca os cards em coluna */
-        gap: 0.5rem; /* Reduz o espaço entre os cards */
-    }
-
-    .eventCard {
-        width: calc(100% - 1rem); /* Ajusta a largura para melhor visualização */
-        padding: 1rem; /* Ajusta o padding para economizar espaço */
+        flex: 1 1 100%; /* Ajusta o tamanho dos cards para ocupar toda a largura disponível */
+        margin: 0.5rem 0; /* Ajusta a margem para telas menores */
     }
 }
