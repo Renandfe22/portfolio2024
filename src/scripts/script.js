@@ -39,23 +39,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    
-    const name = document.querySelector('#name').value
-    const email = document.querySelector('#email').value
-    const message = document.querySelector('#message').value
 
+    // Captura os campos do formulário
+    const form = event.target;
+    const name = form.querySelector('#name').value;
+    const email = form.querySelector('#email').value;
+    const message = form.querySelector('#message').value;
+
+    // Envia os dados para a API
     fetch('https://api.sheetmonkey.io/form/mJ2MWJY7DgvFGQCJgHbPXQ', {
-        
         method: 'post',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({name, email, message}), //converte o objeto em string
+        body: JSON.stringify({ name, email, message }), // Converte o objeto em string
     })
+
+        .then(response => {
+            if (response.ok) {
+                // Limpa os campos do formulário
+                form.querySelector('#name').value = '';
+                form.querySelector('#email').value = '';
+                form.querySelector('#message').value = '';
+                // Exibe o alerta
+                alert('Mensagem enviada com sucesso');
+            } else {
+                alert('Houve um problema ao enviar a mensagem');
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Houve um problema ao enviar a mensagem');
+        });
 }
 
 // Itera sobre cada formulário e adiciona o event listener
 document.querySelectorAll('form').forEach(form => {
-    form.addEventListener('submit', handleSubmit)
-})
+    form.addEventListener('submit', handleSubmit);
+});
