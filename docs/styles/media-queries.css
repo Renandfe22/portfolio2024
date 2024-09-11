@@ -1,5 +1,105 @@
 /* Estilos para telas menores */
 @media (max-width: 768px) {
+    #skills {
+        padding: 2rem 1rem; /* Ajustado para melhor responsividade */
+    }
+
+    #titleSkills {
+        font-size: 2.5rem; /* Ajustado para se adequar melhor em telas menores */
+    }
+
+    #subtitleSkills {
+        font-size: 1.5rem; /* Ajustado para melhor responsividade */
+    }
+
+    .skill-progress {
+        flex-direction: column; /* Coloca as habilidades em coluna para telas menores */
+        max-width: 100%; /* Permite que a largura se ajuste ao tamanho da tela */
+    }
+
+    .skill-item {
+        flex: 1 1 auto; /* Ajusta o item de habilidade para preencher a coluna */
+        margin-bottom: 1rem; /* Adiciona espaçamento entre os itens */
+        padding: 1rem; /* Ajustado para economizar espaço */
+    }
+
+    .skill-item img {
+        height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    }
+
+    .subSkill {
+        font-size: 2rem; /* Ajustado para melhor legibilidade em telas menores */
+        max-width: 90%; /* Ajusta a largura da descrição */
+    }
+}
+
+/* Estilos para tablets e telas médias */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #skills {
+        padding: 3rem 2rem; /* Ajustado para melhor responsividade */
+    }
+
+    #titleSkills {
+        font-size: 3rem; /* Ajustado para melhor responsividade em tablets */
+    }
+
+    #subtitleSkills {
+        font-size: 1.8rem; /* Ajustado para tablets */
+    }
+
+    .skill-progress {
+        flex-direction: row; /* Mantém as habilidades em linha para tablets */
+    }
+
+    .skill-item {
+        flex: 1 1 45%; /* Ajustado para preencher a linha */
+        margin: 1rem; /* Adiciona espaçamento entre os itens */
+        padding: 1.25rem; /* Ajustado para tablets */
+    }
+
+    .skill-item img {
+        height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    }
+
+    .subSkill {
+        font-size: 2.4rem; /* Ajustado para tablets */
+        max-width: 80%; /* Ajusta a largura da descrição */
+    }
+}
+
+/* Estilos específicos para dispositivos como iPhone 11 */
+@media (max-width: 828px) {
+    #titleSkills {
+        font-size: 2rem; /* Ajustado para melhorar a visualização */
+    }
+
+    #subtitleSkills {
+        font-size: 1.2rem; /* Ajustado para melhorar a visualização */
+    }
+
+    .skill-progress {
+        flex-direction: column; /* Coloca as habilidades em coluna para telas menores */
+        max-width: 100%; /* Permite que a largura se ajuste ao tamanho da tela */
+    }
+
+    .skill-item {
+        flex: 1 1 auto; /* Ajusta o item de habilidade para preencher a coluna */
+        margin-bottom: 1rem; /* Adiciona espaçamento entre os itens */
+        padding: 1rem; /* Ajustado para economizar espaço */
+    }
+
+    .skill-item img {
+        height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    }
+
+    .subSkill {
+        font-size: 1.8rem; /* Ajustado para melhor legibilidade em telas menores */
+        max-width: 90%; /* Ajusta a largura da descrição */
+    }
+}
+
+/* Estilos para o contato e containers */
+@media (max-width: 768px) {
     #contactPage {
         display: flex;
         flex-direction: column;
@@ -8,13 +108,11 @@
 
     #contactTitle {
         font-size: 1.8rem; /* Reduzido para se ajustar melhor em telas pequenas */
-        padding-left: 0;
         text-align: center;
     }
 
     #DescriptContact {
         width: calc(100% - 2rem); /* Ajusta a largura para melhor adaptação */
-        padding-left: 0;
         font-size: 1rem;
     }
 
@@ -43,39 +141,8 @@
         padding: 0.5rem 1rem;
         margin: 1rem auto;
     }
-
-    #titleProjects, #titleSkills {
-        font-size: 2.5rem; /* Ajustado para se adequar melhor em telas menores */
-    }
-
-    .slider {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .skill-item {
-        padding: 0.5rem; /* Ajustado para economizar espaço */
-    }
-
-    .skill-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    #skills {
-        padding: 2rem 0; /* Ajustado para melhor responsividade */
-    }
-
-    #titleSkills {
-        font-size: 2.5rem; /* Reduzido para se ajustar melhor em telas menores */
-    }
-
-    #subtitleSkills {
-        font-size: 1.5rem; /* Ajustado para melhor responsividade */
-    }
 }
 
-/* Estilos para tablets e telas médias */
 @media (min-width: 769px) and (max-width: 1024px) {
     #contactPage {
         display: grid;
@@ -86,12 +153,10 @@
 
     #contactTitle {
         font-size: 2rem; /* Ajustado para melhor adaptação em tablets */
-        padding-left: 0;
     }
 
     #DescriptContact {
         width: calc(100% - 2rem); /* Ajusta a largura para melhor adaptação */
-        padding-left: 0;
         font-size: 1.2rem;
     }
 
@@ -120,55 +185,5 @@
         font-size: 1rem;
         padding: 0.6rem 1.2rem;
         margin: 1rem auto;
-    }
-
-    #titleProjects, #titleSkills {
-        font-size: 3rem; /* Ajustado para melhor responsividade em tablets */
-    }
-
-    .slider {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .skill-item {
-        padding: 0.75rem; /* Ajustado para tablets */
-    }
-
-    .skill-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    #skills {
-        padding: 3rem 0; /* Ajustado para melhor responsividade */
-    }
-
-    #titleSkills {
-        font-size: 3rem; /* Ajustado para tablets */
-    }
-
-    #subtitleSkills {
-        font-size: 1.8rem; /* Ajustado para tablets */
-    }
-}
-
-/* Estilos específicos para dispositivos como iPhone 11 */
-@media (max-width: 828px) {
-    #titleSkills {
-        font-size: 2rem; /* Ajustado para melhorar a visualização */
-    }
-
-    #subtitleSkills {
-        font-size: 1.2rem; /* Ajustado para melhorar a visualização */
-    }
-
-    .skill-item {
-        flex: 1 1 45%; /* Ajustado para melhor ajuste em tela pequena */
-    }
-
-    .gallery-img {
-        width: 6rem; /* Reduzido para melhor ajuste */
-        height: 6rem; /* Reduzido para melhor ajuste */
     }
 }
