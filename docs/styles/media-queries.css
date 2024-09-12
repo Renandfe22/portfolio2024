@@ -1,174 +1,107 @@
-/* Estilos para telas menores */
-@media (max-width: 768px) {
-    #contactPage {
-        display: flex;
-        flex-direction: column;
+/* Media queries para dispositivos móveis (celulares) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.2rem; /* Aumenta o tamanho do texto */
+    }
+    
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Ajuste de título */
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container {
         padding: 1rem;
     }
 
-    #contactTitle {
-        font-size: 1.8rem; /* Reduzido para se ajustar melhor em telas pequenas */
-        padding-left: 0;
-        text-align: center;
+    /* Ajuste de botões */
+    .button {
+        font-size: 1.2rem;
+        padding: 0.8rem;
     }
-
-    #DescriptContact {
-        width: calc(100% - 2rem); /* Ajusta a largura para melhor adaptação */
-        padding-left: 0;
-        font-size: 1rem;
-    }
-
-    #socialIcons, #talkToMe {
-        margin-top: 1rem;
-        text-align: center;
-    }
-
-    .talk {
-        font-size: 1.2rem; /* Reduzido para se ajustar melhor em telas pequenas */
-    }
-
-    .nameTalk {
-        font-size: 0.9rem; /* Reduzido para se ajustar melhor em telas pequenas */
-    }
-
-    .localMensage, textarea {
-        width: calc(100% - 2rem);
-        height: 2.5rem;
-        margin: 0 auto 1rem;
-        font-size: 0.9rem;
-    }
-
-    button {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-        margin: 1rem auto;
-    }
-
-    #titleProjects, #titleSkills {
-        font-size: 2.5rem; /* Ajustado para se adequar melhor em telas menores */
-    }
-
-    .slider {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .skill-item {
-        padding: 0.5rem; /* Ajustado para economizar espaço */
-    }
-
-    .skill-item img {
+    
+    /* Ajuste de imagens */
+    .image {
         width: 100%;
         height: auto;
     }
-
-    #skills {
-        padding: 2rem 0; /* Ajustado para melhor responsividade */
-    }
-
-    #titleSkills {
-        font-size: 2.5rem; /* Reduzido para se ajustar melhor em telas menores */
-    }
-
-    #subtitleSkills {
-        font-size: 1.5rem; /* Ajustado para melhor responsividade */
+    
+    /* Outros ajustes de layout */
+    .section {
+        margin: 0;
+        padding: 1rem;
     }
 }
 
-/* Estilos para tablets e telas médias */
-@media (min-width: 769px) and (max-width: 1024px) {
-    #contactPage {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        padding: 2rem;
+/* Media queries para tablets */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 1.4rem;
     }
 
-    #contactTitle {
-        font-size: 2rem; /* Ajustado para melhor adaptação em tablets */
-        padding-left: 0;
+    h1, h2, h3 {
+        font-size: 2rem;
     }
 
-    #DescriptContact {
-        width: calc(100% - 2rem); /* Ajusta a largura para melhor adaptação */
-        padding-left: 0;
+    p {
         font-size: 1.2rem;
     }
 
-    #socialIcons, #talkToMe {
-        grid-column: 1 / 2;
-        margin-top: 2rem;
-        text-align: center;
+    .container {
+        padding: 2rem;
     }
 
-    .talk {
-        font-size: 1.5rem; /* Ajustado para tablets */
+    /* Ajuste de botões */
+    .button {
+        font-size: 1.4rem;
+        padding: 1rem;
     }
 
-    .nameTalk {
-        font-size: 1rem; /* Ajustado para tablets */
-    }
-
-    .localMensage, textarea {
-        width: calc(100% - 2rem);
-        height: 2.5rem;
-        margin: 0 auto 1rem;
-        font-size: 1rem;
-    }
-
-    button {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-        margin: 1rem auto;
-    }
-
-    #titleProjects, #titleSkills {
-        font-size: 3rem; /* Ajustado para melhor responsividade em tablets */
-    }
-
-    .slider {
-        max-width: 100%;
+    /* Ajuste de imagens */
+    .image {
+        width: 80%;
         height: auto;
     }
 
-    .skill-item {
-        padding: 0.75rem; /* Ajustado para tablets */
-    }
-
-    .skill-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    #skills {
-        padding: 3rem 0; /* Ajustado para melhor responsividade */
-    }
-
-    #titleSkills {
-        font-size: 3rem; /* Ajustado para tablets */
-    }
-
-    #subtitleSkills {
-        font-size: 1.8rem; /* Ajustado para tablets */
+    /* Outros ajustes de layout */
+    .section {
+        margin: 1rem;
+        padding: 2rem;
     }
 }
 
-/* Estilos específicos para dispositivos como iPhone 11 */
-@media (max-width: 828px) {
-    #titleSkills {
-        font-size: 2rem; /* Ajustado para melhorar a visualização */
+/* Media queries para dispositivos maiores */
+@media screen and (min-width: 901px) {
+    body {
+        font-size: 1.6rem;
     }
 
-    #subtitleSkills {
-        font-size: 1.2rem; /* Ajustado para melhorar a visualização */
+    h1, h2, h3 {
+        font-size: 2.5rem;
     }
 
-    .skill-item {
-        flex: 1 1 45%; /* Ajustado para melhor ajuste em tela pequena */
+    p {
+        font-size: 1.4rem;
     }
 
-    .gallery-img {
-        width: 6rem; /* Reduzido para melhor ajuste */
-        height: 6rem; /* Reduzido para melhor ajuste */
+    .container {
+        padding: 3rem;
+    }
+
+    .button {
+        font-size: 1.6rem;
+        padding: 1.2rem;
+    }
+
+    .image {
+        width: 70%;
+        height: auto;
+    }
+
+    .section {
+        margin: 2rem;
+        padding: 3rem;
     }
 }
