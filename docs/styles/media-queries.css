@@ -1,11 +1,11 @@
 /* Estilos gerais para dispositivos móveis */
 @media (max-width: 768px) {
     #mainTitle {
-        font-size: clamp(2rem, 6vw, 4.3rem); /* Menor tamanho de título para telas menores */
+        font-size: clamp(2rem, 6vw, 4.3rem);
     }
 
     #secondaryTitle {
-        font-size: clamp(1rem, 3vw, 1.8rem); /* Subtítulo menor em dispositivos móveis */
+        font-size: clamp(1rem, 3vw, 1.8rem);
     }
 
     #ActionButton {
@@ -13,95 +13,108 @@
     }
 
     #mainButton {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte do botão */
-        padding: 0.8rem 1.5rem; /* Ajusta o padding para não ficar muito grande */
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
     }
 
     #mainDescription {
-        font-size: 1.3rem; /* Ajusta o tamanho do texto da descrição */
-        padding: 1rem; /* Reduz o padding em dispositivos móveis */
+        font-size: 1.3rem;
+        padding: 1rem;
     }
 
     #titleProjects {
-        font-size: 4.3rem; /* Diminui o tamanho do título dos projetos */
+        font-size: 4.3rem;
     }
 
     .slideTitle {
-        font-size: 2.5rem; /* Ajusta o tamanho do título dos slides */
+        font-size: 2.5rem;
     }
 
     .slideDescription {
-        font-size: 1.5rem; /* Ajusta a descrição para melhor legibilidade */
+        font-size: 1.5rem;
     }
 
-    /* Ajustes para o slider */
     .slider {
-        height: 20rem; /* Ajuste da altura do slider */
+        height: 20rem;
     }
 
     #skills {
-        padding: 2rem 0; /* Reduz o espaçamento da seção de habilidades */
+        padding: 2rem 0;
     }
 
     .skill-item {
-        padding: 1rem; /* Menor padding para os itens de habilidades */
+        padding: 1rem;
     }
 
     #titleSkills {
-        font-size: 3rem; /* Ajuste para o título de habilidades */
+        font-size: 3rem;
     }
 
     #subtitleSkills {
-        font-size: 1.8rem; /* Ajuste para o subtítulo de habilidades */
+        font-size: 1.8rem;
     }
 
     #HackAndEvents {
-        padding: 2rem 0; /* Reduz o espaçamento geral da seção */
+        padding: 2rem 0;
     }
 
     #titleEvents {
-        font-size: 3rem; /* Ajusta o tamanho do título de eventos */
+        font-size: 3rem;
     }
 
     .eventCard {
-        width: 100%; /* Ajusta a largura dos cards de eventos para ocupar toda a largura da tela */
+        width: 100%;
     }
 
     .gallery-img {
-        width: 6rem; /* Menor tamanho das imagens da galeria */
+        width: 6rem;
         height: 6rem;
     }
 
     /* Ajuste para a página de contato */
     #contactPage {
-        grid-template-columns: 1fr; /* Uma única coluna para dispositivos móveis */
+        display: flex;
+        flex-direction: column; /* Quebra o conteúdo para baixo */
+        align-items: center; /* Centraliza o conteúdo */
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 
     #contactTitle {
         font-size: 3rem;
+        text-align: center; /* Centraliza o título */
         padding-left: 0;
     }
 
     #DescriptContact {
         font-size: 1.2rem;
         width: 100%;
+        text-align: center; /* Centraliza a descrição */
         padding-left: 0;
+        margin-bottom: 2rem; /* Adiciona um espaço abaixo da descrição */
+    }
+
+    #contactForm {
+        width: 100%;
+        margin-bottom: 2rem; /* Adiciona espaço abaixo do formulário */
     }
 
     #socialIcons {
-        justify-content: center; /* Centraliza os ícones sociais */
+        display: flex;
+        justify-content: center; /* Centraliza os ícones */
+        gap: 1rem; /* Espaçamento entre os ícones */
+        flex-wrap: wrap; /* Garante que os ícones fiquem em linha abaixo do texto */
     }
 }
 
 /* Estilos para tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
     #mainTitle {
-        font-size: clamp(2.5rem, 6vw, 5rem); /* Ajusta o tamanho para tablets */
+        font-size: clamp(2.5rem, 6vw, 5rem);
     }
 
     #secondaryTitle {
-        font-size: clamp(1.1rem, 3vw, 2rem); /* Ajusta o tamanho para tablets */
+        font-size: clamp(1.1rem, 3vw, 2rem);
     }
 
     #mainButton {
@@ -143,19 +156,24 @@
     }
 
     #contactPage {
-        grid-template-columns: repeat(4, 1fr); /* Ajuste para quatro colunas em tablets */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Quatro colunas para tablets */
     }
 
     #contactTitle {
         font-size: 3.5rem;
+        text-align: center;
     }
 
     #DescriptContact {
         font-size: 1.4rem;
         padding-left: 3rem;
+        margin-bottom: 2rem;
     }
 
     #socialIcons {
+        display: flex;
         justify-content: flex-start;
+        gap: 1rem;
     }
 }
