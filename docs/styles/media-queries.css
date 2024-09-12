@@ -1,94 +1,86 @@
-/* Estilos para telas menores */
+/* Estilos para telas menores (celulares e pequenos tablets) */
 @media (max-width: 768px) {
-    #contactPage {
+    /* Ocupar toda a largura da tela */
+    #contactPage, #skillsPage, #eventsPage {
         display: flex; /* Usa flexbox para ajustar o layout */
         flex-direction: column; /* Organiza os elementos em coluna */
-        padding: 1rem; /* Ajusta o padding */
+        padding: 1rem;
+        width: 100%; /* Ocupar toda a largura */
     }
 
-    #contactTitle {
-        font-size: 3rem; /* Reduz o tamanho da fonte */
-        padding-left: 0; /* Remove o padding lateral */
-        text-align: center; /* Centraliza o texto */
+    #contactTitle, #skillsTitle, #eventsTitle {
+        font-size: 2.5rem; /* Reduz o tamanho do título */
+        text-align: center;
     }
 
-    #DescriptContact {
-        width: 100%; /* Ajusta a largura */
-        padding-left: 0; /* Remove o padding lateral */
-    }
-
-    #socialIcons, #talkToMe {
-        margin-top: 1rem; /* Adiciona margem superior */
-        text-align: center; /* Centraliza os ícones sociais e o botão */
-    }
-
-    .talk {
-        font-size: 2rem; /* Reduz o tamanho da fonte */
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .nameTalk {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .localMensage, textarea {
-        width: calc(100% - 2rem); /* Ajusta a largura com margem */
-        height: 2.5rem; /* Ajusta a altura */
-        margin: 0 auto 1rem; /* Adiciona margem horizontal automática e inferior */
+    /* Ajuste de formulários */
+    .formContainer, .localMensage, textarea {
+        width: 100%; /* Ocupar 100% da largura */
+        height: 2.5rem;
+        margin: 1rem 0; /* Margem entre os campos */
     }
 
     button {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
-        padding: 0.5rem 1rem; /* Ajusta o padding */
-        margin: 1rem auto; /* Adiciona margem automática horizontal */
-        display: block; /* Garante que o botão ocupe o espaço necessário */
+        font-size: 1rem; /* Ajusta o tamanho do botão */
+        padding: 0.5rem 1rem;
+        margin: 1rem auto; /* Centralizar botão */
+        display: block;
+        width: 100%; /* Ocupa toda a largura */
     }
 }
 
 /* Estilos para tablets e telas médias */
 @media (min-width: 769px) and (max-width: 1024px) {
-    #contactPage {
+    #contactPage, #skillsPage, #eventsPage {
         display: grid; /* Usa grid para ajustar o layout */
         grid-template-columns: 1fr; /* Coluna única para tablets */
-        grid-template-rows: auto auto auto auto auto auto; /* Ajusta o layout para uma única coluna */
-        padding: 2rem; /* Ajusta o padding */
+        grid-template-rows: auto;
+        padding: 2rem;
+        width: 100%; /* Ocupar toda a largura */
     }
 
-    #contactTitle {
-        font-size: 3.5rem; /* Ajusta o tamanho da fonte */
-        padding-left: 0; /* Remove o padding lateral */
+    #contactTitle, #skillsTitle, #eventsTitle {
+        font-size: 3rem; /* Ajuste para tablets */
+        text-align: center;
     }
 
-    #DescriptContact {
-        width: 100%; /* Ajusta a largura */
-        padding-left: 0; /* Remove o padding lateral */
-    }
-
-    #socialIcons, #talkToMe {
-        grid-column: 1 / 2; /* Ajusta a coluna para uma coluna única */
-        margin-top: 2rem; /* Adiciona margem superior */
-        text-align: center; /* Centraliza os ícones sociais e o botão */
-    }
-
-    .talk {
-        font-size: 2.2rem; /* Ajusta o tamanho da fonte */
-    }
-
-    .nameTalk {
-        font-size: 1.1rem; /* Ajusta o tamanho da fonte */
-    }
-
-    .localMensage, textarea {
-        width: calc(100% - 2rem); /* Ajusta a largura com margem */
-        height: 2.5rem; /* Ajusta a altura */
-        margin: 0 auto 1rem; /* Adiciona margem horizontal automática e inferior */
+    .formContainer, .localMensage, textarea {
+        width: calc(100% - 2rem); /* Ajusta a largura */
+        margin: 1rem auto; /* Espaçamento */
     }
 
     button {
-        font-size: 1.2rem; /* Ajusta o tamanho da fonte */
-        padding: 0.7rem 1.3rem; /* Ajusta o padding */
-        margin: 1rem auto; /* Adiciona margem automática horizontal */
-        display: block; /* Garante que o botão ocupe o espaço necessário */
+        font-size: 1.2rem;
+        padding: 0.7rem 1.3rem;
+        margin: 1rem auto;
+        display: block;
+        width: 100%;
+    }
+}
+/* Estilos para telas de 1792x828 pixels */
+@media screen and (min-width: 1792px) and (max-width: 828px) {
+    #contactPage, #skillsPage, #eventsPage {
+        display: grid; /* Usa grid */
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        width: 100%; /* Ocupar toda a largura */
+    }
+
+    #contactTitle, #skillsTitle, #eventsTitle {
+        font-size: 4rem; /* Ajuste para essa resolução */
+        text-align: center;
+    }
+
+    .formContainer, .localMensage, textarea {
+        width: 100%; /* Ocupar toda a largura */
+        margin: 1.5rem auto; /* Margem entre os campos */
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+        margin: 1.5rem auto;
+        display: block;
+        width: 100%; /* Ocupa toda a largura */
     }
 }
