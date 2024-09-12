@@ -1,86 +1,161 @@
-/* Estilos para telas menores (celulares e pequenos tablets) */
+/* Estilos gerais para dispositivos móveis */
 @media (max-width: 768px) {
-    /* Ocupar toda a largura da tela */
-    #contactPage, #skillsPage, #eventsPage {
-        display: flex; /* Usa flexbox para ajustar o layout */
-        flex-direction: column; /* Organiza os elementos em coluna */
-        padding: 1rem;
-        width: 100%; /* Ocupar toda a largura */
+    #mainTitle {
+        font-size: clamp(2rem, 6vw, 4.3rem); /* Menor tamanho de título para telas menores */
     }
 
-    #contactTitle, #skillsTitle, #eventsTitle {
-        font-size: 2.5rem; /* Reduz o tamanho do título */
-        text-align: center;
+    #secondaryTitle {
+        font-size: clamp(1rem, 3vw, 1.8rem); /* Subtítulo menor em dispositivos móveis */
     }
 
-    /* Ajuste de formulários */
-    .formContainer, .localMensage, textarea {
-        width: 100%; /* Ocupar 100% da largura */
-        height: 2.5rem;
-        margin: 1rem 0; /* Margem entre os campos */
+    #ActionButton {
+        padding: 0.5rem;
     }
 
-    button {
-        font-size: 1rem; /* Ajusta o tamanho do botão */
-        padding: 0.5rem 1rem;
-        margin: 1rem auto; /* Centralizar botão */
-        display: block;
-        width: 100%; /* Ocupa toda a largura */
+    #mainButton {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte do botão */
+        padding: 0.8rem 1.5rem; /* Ajusta o padding para não ficar muito grande */
     }
-}
 
-/* Estilos para tablets e telas médias */
-@media (min-width: 769px) and (max-width: 1024px) {
-    #contactPage, #skillsPage, #eventsPage {
-        display: grid; /* Usa grid para ajustar o layout */
-        grid-template-columns: 1fr; /* Coluna única para tablets */
+    #mainDescription {
+        font-size: 1.3rem; /* Ajusta o tamanho do texto da descrição */
+        padding: 1rem; /* Reduz o padding em dispositivos móveis */
+    }
+
+    #titleProjects {
+        font-size: 4.3rem; /* Diminui o tamanho do título dos projetos */
+    }
+
+    .slideTitle {
+        font-size: 2.5rem; /* Ajusta o tamanho do título dos slides */
+    }
+
+    .slideDescription {
+        font-size: 1.5rem; /* Ajusta a descrição para melhor legibilidade */
+    }
+
+    /* Ajustes para o slider */
+    .slider {
+        height: 20rem; /* Ajuste da altura do slider */
+    }
+
+    #skills {
+        padding: 2rem 0; /* Reduz o espaçamento da seção de habilidades */
+    }
+
+    .skill-item {
+        padding: 1rem; /* Menor padding para os itens de habilidades */
+    }
+
+    #titleSkills {
+        font-size: 3rem; /* Ajuste para o título de habilidades */
+    }
+
+    #subtitleSkills {
+        font-size: 1.8rem; /* Ajuste para o subtítulo de habilidades */
+    }
+
+    #HackAndEvents {
+        padding: 2rem 0; /* Reduz o espaçamento geral da seção */
+    }
+
+    #titleEvents {
+        font-size: 3rem; /* Ajusta o tamanho do título de eventos */
+    }
+
+    .eventCard {
+        width: 100%; /* Ajusta a largura dos cards de eventos para ocupar toda a largura da tela */
+    }
+
+    .gallery-img {
+        width: 6rem; /* Menor tamanho das imagens da galeria */
+        height: 6rem;
+    }
+
+    /* Ajuste para a página de contato */
+    #contactPage {
+        grid-template-columns: 1fr; /* Uma única coluna para dispositivos móveis */
         grid-template-rows: auto;
-        padding: 2rem;
-        width: 100%; /* Ocupar toda a largura */
     }
 
-    #contactTitle, #skillsTitle, #eventsTitle {
-        font-size: 3rem; /* Ajuste para tablets */
-        text-align: center;
+    #contactTitle {
+        font-size: 3rem;
+        padding-left: 0;
     }
 
-    .formContainer, .localMensage, textarea {
-        width: calc(100% - 2rem); /* Ajusta a largura */
-        margin: 1rem auto; /* Espaçamento */
-    }
-
-    button {
+    #DescriptContact {
         font-size: 1.2rem;
-        padding: 0.7rem 1.3rem;
-        margin: 1rem auto;
-        display: block;
         width: 100%;
+        padding-left: 0;
+    }
+
+    #socialIcons {
+        justify-content: center; /* Centraliza os ícones sociais */
     }
 }
-/* Estilos para telas de 1792x828 pixels */
-@media screen and (min-width: 1792px) and (max-width: 828px) {
-    #contactPage, #skillsPage, #eventsPage {
-        display: grid; /* Usa grid */
-        grid-template-columns: 1fr;
-        padding: 3rem;
-        width: 100%; /* Ocupar toda a largura */
+
+/* Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #mainTitle {
+        font-size: clamp(2.5rem, 6vw, 5rem); /* Ajusta o tamanho para tablets */
     }
 
-    #contactTitle, #skillsTitle, #eventsTitle {
-        font-size: 4rem; /* Ajuste para essa resolução */
-        text-align: center;
+    #secondaryTitle {
+        font-size: clamp(1.1rem, 3vw, 2rem); /* Ajusta o tamanho para tablets */
     }
 
-    .formContainer, .localMensage, textarea {
-        width: 100%; /* Ocupar toda a largura */
-        margin: 1.5rem auto; /* Margem entre os campos */
+    #mainButton {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
     }
 
-    button {
+    #mainDescription {
         font-size: 1.5rem;
-        padding: 0.8rem 1.5rem;
-        margin: 1.5rem auto;
-        display: block;
-        width: 100%; /* Ocupa toda a largura */
+        padding: 1.5rem;
+    }
+
+    #titleProjects {
+        font-size: 5rem;
+    }
+
+    .slideTitle {
+        font-size: 3.2rem;
+    }
+
+    .slideDescription {
+        font-size: 2rem;
+    }
+
+    .slider {
+        height: 25rem;
+    }
+
+    #skills {
+        padding: 3rem 0;
+    }
+
+    .skill-item {
+        padding: 1rem;
+    }
+
+    #HackAndEvents {
+        padding: 3rem 0;
+    }
+
+    #contactPage {
+        grid-template-columns: repeat(4, 1fr); /* Ajuste para quatro colunas em tablets */
+    }
+
+    #contactTitle {
+        font-size: 3.5rem;
+    }
+
+    #DescriptContact {
+        font-size: 1.4rem;
+        padding-left: 3rem;
+    }
+
+    #socialIcons {
+        justify-content: flex-start;
     }
 }
