@@ -1,107 +1,94 @@
-/* Media queries para dispositivos móveis (celulares) */
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 1.2rem; /* Aumenta o tamanho do texto */
-    }
-    
-    h1, h2, h3 {
-        font-size: 1.5rem; /* Ajuste de título */
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    #contactPage {
+        display: flex; /* Usa flexbox para ajustar o layout */
+        flex-direction: column; /* Organiza os elementos em coluna */
+        padding: 1rem; /* Ajusta o padding */
     }
 
-    p {
-        font-size: 1rem;
+    #contactTitle {
+        font-size: 3rem; /* Reduz o tamanho da fonte */
+        padding-left: 0; /* Remove o padding lateral */
+        text-align: center; /* Centraliza o texto */
     }
 
-    .container {
-        padding: 1rem;
+    #DescriptContact {
+        width: 100%; /* Ajusta a largura */
+        padding-left: 0; /* Remove o padding lateral */
     }
 
-    /* Ajuste de botões */
-    .button {
-        font-size: 1.2rem;
-        padding: 0.8rem;
+    #socialIcons, #talkToMe {
+        margin-top: 1rem; /* Adiciona margem superior */
+        text-align: center; /* Centraliza os ícones sociais e o botão */
     }
-    
-    /* Ajuste de imagens */
-    .image {
-        width: 100%;
-        height: auto;
+
+    .talk {
+        font-size: 2rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
     }
-    
-    /* Outros ajustes de layout */
-    .section {
-        margin: 0;
-        padding: 1rem;
+
+    .nameTalk {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .localMensage, textarea {
+        width: calc(100% - 2rem); /* Ajusta a largura com margem */
+        height: 2.5rem; /* Ajusta a altura */
+        margin: 0 auto 1rem; /* Adiciona margem horizontal automática e inferior */
+    }
+
+    button {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+        padding: 0.5rem 1rem; /* Ajusta o padding */
+        margin: 1rem auto; /* Adiciona margem automática horizontal */
+        display: block; /* Garante que o botão ocupe o espaço necessário */
     }
 }
 
-/* Media queries para tablets */
-@media screen and (min-width: 601px) and (max-width: 900px) {
-    body {
-        font-size: 1.4rem;
+/* Estilos para tablets e telas médias */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #contactPage {
+        display: grid; /* Usa grid para ajustar o layout */
+        grid-template-columns: 1fr; /* Coluna única para tablets */
+        grid-template-rows: auto auto auto auto auto auto; /* Ajusta o layout para uma única coluna */
+        padding: 2rem; /* Ajusta o padding */
     }
 
-    h1, h2, h3 {
-        font-size: 2rem;
+    #contactTitle {
+        font-size: 3.5rem; /* Ajusta o tamanho da fonte */
+        padding-left: 0; /* Remove o padding lateral */
     }
 
-    p {
-        font-size: 1.2rem;
+    #DescriptContact {
+        width: 100%; /* Ajusta a largura */
+        padding-left: 0; /* Remove o padding lateral */
     }
 
-    .container {
-        padding: 2rem;
+    #socialIcons, #talkToMe {
+        grid-column: 1 / 2; /* Ajusta a coluna para uma coluna única */
+        margin-top: 2rem; /* Adiciona margem superior */
+        text-align: center; /* Centraliza os ícones sociais e o botão */
     }
 
-    /* Ajuste de botões */
-    .button {
-        font-size: 1.4rem;
-        padding: 1rem;
+    .talk {
+        font-size: 2.2rem; /* Ajusta o tamanho da fonte */
     }
 
-    /* Ajuste de imagens */
-    .image {
-        width: 80%;
-        height: auto;
+    .nameTalk {
+        font-size: 1.1rem; /* Ajusta o tamanho da fonte */
     }
 
-    /* Outros ajustes de layout */
-    .section {
-        margin: 1rem;
-        padding: 2rem;
-    }
-}
-
-/* Media queries para dispositivos maiores */
-@media screen and (min-width: 901px) {
-    body {
-        font-size: 1.6rem;
+    .localMensage, textarea {
+        width: calc(100% - 2rem); /* Ajusta a largura com margem */
+        height: 2.5rem; /* Ajusta a altura */
+        margin: 0 auto 1rem; /* Adiciona margem horizontal automática e inferior */
     }
 
-    h1, h2, h3 {
-        font-size: 2.5rem;
-    }
-
-    p {
-        font-size: 1.4rem;
-    }
-
-    .container {
-        padding: 3rem;
-    }
-
-    .button {
-        font-size: 1.6rem;
-        padding: 1.2rem;
-    }
-
-    .image {
-        width: 70%;
-        height: auto;
-    }
-
-    .section {
-        margin: 2rem;
-        padding: 3rem;
+    button {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+        padding: 0.7rem 1.3rem; /* Ajusta o padding */
+        margin: 1rem auto; /* Adiciona margem automática horizontal */
+        display: block; /* Garante que o botão ocupe o espaço necessário */
     }
 }
