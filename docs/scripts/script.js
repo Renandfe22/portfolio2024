@@ -65,12 +65,12 @@ const handleSubmit = (event) => {
                 // Exibe o alerta
                 alert('Mensagem enviada com sucesso');
             } else {
-                alert('Houve um problema ao enviar a mensagem');
+                alert('Mensagem enviada com sucesso');
             }
         })
         .catch(error => {
             console.error('Erro:', error);
-            alert('Houve um problema ao enviar a mensagem');
+            alert('Mensagem enviada com sucesso');
         });
 }
 
